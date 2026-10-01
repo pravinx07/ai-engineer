@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx src/token-explorer.ts",
+    "build": "tsc",
+    "start": "node dist/token-explorer.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "dotenv": "^18.0.5",
+    "js-tiktoken": "^1.0.21",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
